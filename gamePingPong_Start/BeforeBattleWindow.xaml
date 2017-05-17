@@ -1,0 +1,29 @@
+﻿<Window x:Class="gamePingPong_Start.BattleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gamePingPong_Start"
+        mc:Ignorable="d"
+        Title="BattleWindow"  Width="500" Height="600" >
+    <Window.Background>
+        <ImageBrush ImageSource="D:\用户目录\我的文档\Visual Studio 2017\Projects\gamePingPong_Start\gamePingPong_Start\Properties\gym.jpg"/>
+    </Window.Background>
+    
+
+    <Grid HorizontalAlignment="Left" Height="600" VerticalAlignment="Top" Width="500">
+        <MediaElement x:Name="bg3" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Visibility="Hidden" Source="D:\用户目录\我的文档\Visual Studio 2017\Projects\gamePingPong_Start\gamePingPong_Start\Properties\bgm3.wav"/>
+        <Image HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="220" Source="D:\用户目录\我的文档\Visual Studio 2017\Projects\gamePingPong_Start\gamePingPong_Start\Properties\helper.jpg"/>
+        <Label Name="dBox1" Content="欢迎来到Ping-PongPro！"  HorizontalAlignment="Left" Height="50" Cursor="Hand" VerticalAlignment="Center" Width="Auto" MouseDown="dBox1_MouseDown_1" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Foreground="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}"  FontSize="20" Margin="225,238,0,312"/>
+        <Canvas>
+            <Button  Canvas.Left="300" Canvas.Top="480" Name="btn_yes" Height="40" Click="click_yes" Width="60" Visibility="Collapsed" />
+        </Canvas>
+        <Canvas>
+            <Button  Canvas.Left="380" Canvas.Top="480" Name="btn_no" Height="40" Width="Auto"  Visibility="Collapsed"  />
+        </Canvas>
+        
+    </Grid>
+
+
+
+</Window>

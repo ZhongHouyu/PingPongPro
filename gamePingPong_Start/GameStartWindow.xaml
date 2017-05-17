@@ -1,0 +1,49 @@
+﻿<Window x:Class="gamePingPong_Start.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gamePingPong_Start"
+        mc:Ignorable="d"
+        Title="GameWindow" Width="500" Height="600"
+          >
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\用户目录\我的文档\Visual Studio 2017\Projects\gamePingPong_Start\gamePingPong_Start\Properties\background1.jpg"/>
+        </Grid.Background>
+        <Button Content="New Game" HorizontalAlignment="Left" Margin="98,34,0,0" VerticalAlignment="Top" Width="82" Height="45" RenderTransformOrigin="0.55,0.038" FontFamily="PMingLiU-ExtB" FontSize="16" FontStyle="Italic" BorderThickness="0" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.365"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.243"/>
+                    <GradientStop Color="#FFE6411C" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Content="Continue" HorizontalAlignment="Left" Margin="98,106,0,0" VerticalAlignment="Top" Width="82" Height="45" RenderTransformOrigin="0.204,0.123" FontFamily="PMingLiU-ExtB" FontSize="16" FontStyle="Italic" Click="Button_Click_2">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.37"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.252"/>
+                    <GradientStop Color="#FFEE4A25" Offset="1"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.257"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <MediaElement x:Name="bg2" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Visibility="Hidden" Source="D:\用户目录\我的文档\Visual Studio 2017\Projects\gamePingPong_Start\gamePingPong_Start\Properties\bgm2.wav"/>
+        <Button Content="Quik" HorizontalAlignment="Left" Margin="98,186,0,0" VerticalAlignment="Top" Width="82" RenderTransformOrigin="-0.06,0.471" Height="45" FontFamily="PMingLiU-ExtB" FontStyle="Italic" FontSize="16" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.452"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.317"/>
+                    <GradientStop Color="#FFDA2E2E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>
